@@ -1,1 +1,80 @@
+/* Tailwind */
 @import "tailwindcss";
+
+/* .font-inter {
+  font-family: "Inter", sans-serif;
+} */
+/* Shared Styles */
+* {
+  max-width: 1440px;
+  font-family: "Noto Serif", serif;
+}
+.container {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+
+.orange {
+  color: #e95a08;
+}
+
+/* Header Styles */
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aquamarine;
+  margin-top: 30px;
+}
+.nav-right-list {
+  display: flex;
+  gap: 60px;
+}
+.logo-img {
+  width: 100%;
+}
+.nav-item,
+.nav-item-cart {
+  color: rgba(137, 135, 161, 1);
+  font-size: medium;
+}
+.nav-home {
+  font-weight: 600;
+  color: black;
+}
+.banner {
+  display: flex;
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+.banner-left {
+  display: grid;
+  grid-column: 1fr;
+  align-items: end;
+}
+.banner-img {
+  width: 100%;
+}
+.banner-tittle {
+  font-weight: bold;
+  font-size: 65px;
+}
+.banner-para {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Media Query */
+
+@media screen and (max-width: 576px) {
+  .nav-right-list li:nth-child(1) {
+    display: none;
+  }
+  .nav-right-list li:nth-child(2) {
+    display: none;
+  }
+  .nav-right-list li:nth-child(3) {
+    display: none;
+  }
+}
