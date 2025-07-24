@@ -151,6 +151,85 @@
   z-index: 1;
 }
 
+/* Deals Section */
+
+.deals-part {
+  border: 1px solid blueviolet;
+  margin-bottom: 100px;
+  text-align: center;
+}
+.deals-tittle {
+  font-size: 3rem;
+  font-weight: bold;
+}
+.deals-para {
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.5);
+  width: 900px;
+  text-align: center;
+  margin: 0px auto;
+}
+
+/* Background Image section */
+
+.box-img {
+  border: 1px solid red;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr), 2fr; */
+}
+.img-top {
+  grid-area: img-top;
+}
+.img-down {
+  grid-area: img-down;
+}
+.img-right {
+  grid-area: img-right;
+}
+
+.box-img {
+  margin-bottom: 100px;
+  display: grid;
+  gap: 25px;
+
+  grid-template-areas:
+    " img-top img-right img-right"
+    " img-down img-right img-right";
+}
+.img-top {
+  background-image: url(../assets/deal-bloom.png);
+  width: 360px;
+  height: 198px;
+  border-radius: 15px;
+  text-align: center;
+}
+.img-down {
+  background-image: url(../assets/deal-ana.png);
+  width: 360px;
+  height: 198px;
+  border-radius: 15px;
+  text-align: center;
+}
+.img-right {
+  background-image: url(../assets/deal-zabo.png);
+  width: 752px;
+  height: 423px;
+  border-radius: 20px;
+  text-align: center;
+}
+.img-td-title {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 75px;
+}
+.img-right-tittle {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 140px;
+}
+
 /* Media Query */
 
 @media screen and (max-width: 576px) {
@@ -207,10 +286,38 @@
   }
   .flover-text {
     text-align: left;
-    margin-left: 1rem;
+    margin-left: 4rem;
     border: 2px solid salmon;
   }
   .badge-img {
     display: none;
+  }
+  .deals-para {
+    width: 100%;
+  }
+  .box-img {
+    grid-template-areas:
+      " img-top"
+      "img-down"
+      "img-right";
+  }
+  .img-top {
+    margin-left: 3.5rem;
+  }
+  .img-down {
+    margin-left: 3.5rem;
+  }
+  .img-right {
+    width: 360px;
+    height: 198px;
+    border-radius: 15px;
+    text-align: center;
+    margin-left: 3.5rem;
+  }
+  .img-right-tittle {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 75px;
   }
 }
