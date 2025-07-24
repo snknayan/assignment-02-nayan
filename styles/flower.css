@@ -9,6 +9,7 @@
   max-width: 1440px;
   font-family: "Noto Serif", serif;
 }
+
 .container {
   max-width: 1140px;
   margin: 0px auto;
@@ -20,8 +21,8 @@
 .plant-card-btn {
   background-color: #e95a08;
   color: white;
-  width: 15rem;
-  height: 3rem;
+  width: 270px;
+  height: 50px;
   margin-top: 25px;
   text-align: center;
 }
@@ -50,18 +51,22 @@
   font-weight: 600;
   color: black;
 }
+/* Banner Styles */
 .banner {
   display: flex;
   margin-top: 120px;
   margin-bottom: 120px;
+  flex: 1;
+  border: 1px solid saddlebrown;
 }
 .banner-left {
   display: grid;
   grid-column: 1fr;
   align-items: end;
 }
-.banner-img {
+.banner-img img {
   width: 100%;
+  padding-top: 93px;
 }
 .banner-tittle {
   font-weight: bold;
@@ -70,6 +75,7 @@
 .banner-para {
   font-size: 22px;
   color: rgba(0, 0, 0, 0.5);
+  width: 100%;
 }
 
 /* Plants Card Section */
@@ -91,11 +97,14 @@
 }
 
 .plants-card {
-  /* border: 1px solid tomato; */
-  width: 15rem;
+  border: 1px solid tomato;
+  width: 270px;
   height: 30rem;
   text-align: center;
   margin-top: 30px;
+}
+.plants-img {
+  width: 100%;
 }
 .Plants-card-title {
   font-size: 22px;
@@ -105,6 +114,41 @@
 .plants-card-price {
   font-size: 22px;
   font-weight: bold;
+}
+
+/* Flower Lover Section */
+
+.flover-section {
+  margin-bottom: 150px;
+  margin-top: 200px;
+
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+}
+.flover-img {
+  width: 100%;
+  position: relative;
+}
+.flover-tittle {
+  font-size: 2.5rem;
+  width: 20rem;
+  padding-left: 15px;
+}
+.flover-text li {
+  color: rgba(0, 0, 0, 0.5);
+  width: 33rem;
+  text-align: left;
+  list-style: disc;
+  margin-left: 2.5rem;
+  padding-top: 2.5rem;
+}
+.badge-img {
+  width: 25%;
+  margin-left: 330px;
+  margin-top: -170px;
+  position: absolute;
+  z-index: 1;
 }
 
 /* Media Query */
@@ -147,6 +191,26 @@
     width: 100%;
   }
   .banner-img {
-    margin: auto;
+    width: 100%;
+  }
+  /* Flower Lover Section */
+  .flover-section {
+    flex-direction: column;
+  }
+
+  .flover-tittle {
+    width: 30rem;
+  }
+  .flover-img {
+    width: 100%;
+    margin-top: 60px;
+  }
+  .flover-text {
+    text-align: left;
+    margin-left: 1rem;
+    border: 2px solid salmon;
+  }
+  .badge-img {
+    display: none;
   }
 }
